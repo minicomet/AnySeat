@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardFragment"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/board1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="자유게시판 (익명)"
+        android:textColor="#000000"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/board2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="건의사항 (익명)"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:background="@drawable/buttonshape"/>
+
+    <Button
+        android:id="@+id/board3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="맛집게시판"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:background="@drawable/buttonshape"/>
+
+    <Button
+        android:id="@+id/board4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="졸업생질문"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:background="@drawable/buttonshape"/>
+</LinearLayout>

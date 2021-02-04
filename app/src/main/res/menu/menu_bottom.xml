@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab1"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="home"/>
+
+    <item
+        android:id="@+id/tab2"
+        android:icon="@drawable/crew"
+        android:title="crew"/>
+
+    <item
+        android:id="@+id/tab3"
+        android:icon="@drawable/study"
+        android:title="study"/>
+
+    <item
+        android:id="@+id/tab4"
+        android:icon="@drawable/board"
+        android:title="board"/>
+
+</menu>

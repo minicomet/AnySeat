@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReferenceFromUrl("https://anyseat-4e964-default-rtdb.firebaseio.com/");
     DatabaseReference userRef = mDatabase.child("user");
 
+    private DatabaseReference reference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -120,7 +122,10 @@ public class MainActivity extends AppCompatActivity {
                             if(KeepLoginCheck.isChecked()){
                                 SaveSharedPreference.setUserName(MainActivity.this, email, password, true);
                             }
-                            Intent intent = new Intent(MainActivity.this, MobileOfficee.class);
+                            String uid = mAuth.getCurrentUser().getUid();
+                            reference = FirebaseDatabase.getInstance().getReference("UserList").child(uid);
+                            reference.setValue(uid);
+                            Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                             intent.putExtra("Password", password);
                             startActivity(intent);
                         } else {
